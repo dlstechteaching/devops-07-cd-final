@@ -1,1 +1,1 @@
-(()=>{try{document.getElementById("month").innerText=((e=new Date)=>["January","February","March","April","May","June","July","August","September","October","November","December"][e.getMonth()])()}catch(e){}})();
+(()=>{const e=["January","February","March","April","May","June","July","August","September","October","November","December"];try{document.getElementById("month").innerText=((r=new Date)=>{const t=r.getMonth();return e[t]})()}catch(e){console.error(JSON.stringify(e))}})();
