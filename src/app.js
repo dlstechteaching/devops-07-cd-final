@@ -19,7 +19,7 @@ const getCurrentMonth = (date = new Date()) => {
     return months[currentMonth];
 };
 
-const isAdmin = (userId) => userId === "admin";
+const isAdmin = (userId) => userId === "admin" || userId === "sudo";
 
 try {
     document.getElementById("month").innerText = getCurrentMonth();
