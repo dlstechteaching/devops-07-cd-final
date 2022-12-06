@@ -2,7 +2,7 @@ name: DevOps 07 CI
 
 on:
   pull_request:
-    branches: [main]
+    branches: [testmain]
   workflow_dispatch:
 
 jobs:
