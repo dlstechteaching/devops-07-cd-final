@@ -2,7 +2,7 @@ name: DevOps 07 CI
 
 on:
   pull_request:
-    branches: [main]
+    branches: [testmain]
   workflow_dispatch:
 
 jobs:
@@ -15,6 +15,7 @@ jobs:
           node-version: 16.14
           cache: "npm"
       - run: npm ci
+      - run : echo ${{secrets.TEST}}
 
   code_quality:
     runs-on: ubuntu-latest

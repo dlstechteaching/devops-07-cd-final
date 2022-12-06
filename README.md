@@ -14,4 +14,5 @@ Install dependencies
 
 ```
 npm i
+test
 ```
