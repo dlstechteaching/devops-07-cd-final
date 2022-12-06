@@ -15,7 +15,7 @@ jobs:
           node-version: 16.14
           cache: "npm"
       - run: npm ci
-      - run : echo "test"
+      - run : echo ${{secrets.TEST}}
 
   code_quality:
     runs-on: ubuntu-latest
