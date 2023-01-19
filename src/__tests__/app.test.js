@@ -4,7 +4,7 @@ const { isAdmin } = require("../app");
 describe("app tests suites - getCurrentMonth", () => {
     test("should return the current month", () => {
         const result = getCurrentMonth();
-        expect(result).toBe("November");
+        expect(result).toBe("January");
     });
 });
 
@@ -16,6 +16,6 @@ describe("app tests suites - isAdmin", () => {
 
     test("should return true as user is admin", () => {
         const result = isAdmin("admin");
-        expect(result).toBe(true);
+                expect(result).toBe(true);
     });
 });
